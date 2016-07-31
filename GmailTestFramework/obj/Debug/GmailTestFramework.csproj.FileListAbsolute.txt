@@ -1,0 +1,17 @@
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\chromedriver.exe
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\chromedriver-license.txt
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\GmailTestFramework.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\GmailTestFramework.pdb
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.Core.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\nunit.framework.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\WebDriver.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.pdb
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.xml
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.Core.pdb
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.Core.xml
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\nunit.framework.xml
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\WebDriver.xml
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.csprojResolveAssemblyReference.cache
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.pdb
