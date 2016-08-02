@@ -15,12 +15,14 @@ namespace GmailTestFramework.TestCases
         {
             PageActions.OpenLoginPage();
             LoginAction.Login();
+            MailAction.CreateNewMessage();
         }
-
+        
         [TearDown]
         public static void TearDown()
         {
            TestFramework.TestFramework.TearDown();
         }
+        
     }
 }

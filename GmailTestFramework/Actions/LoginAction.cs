@@ -12,7 +12,9 @@ namespace GmailTestFramework.Actions
         public static void Login()
         {
             LoginPage.EmailTextBox.SetValue("looksliketestuser@gmail.com");
+            LoginPage.EmailTextBox.Enter();
             LoginPage.PasswordTextBox.SetValue("looksliketestuser123");
+            LoginPage.PasswordTextBox.Enter();
         }
     }
 }

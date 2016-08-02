@@ -11,6 +11,7 @@ namespace GmailTestFramework.Actions
     {
         public static void OpenLoginPage()
         {
+            TestFramework.TestFramework.MaximazeWindow();
             TestFramework.TestFramework.OpenURL("https://mail.google.com/mail");
         }
     }

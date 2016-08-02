@@ -12,6 +12,10 @@ d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\
 d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\FluentAssertions.Core.xml
 d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\nunit.framework.xml
 d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\WebDriver.xml
-d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.csprojResolveAssemblyReference.cache
 d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.dll
 d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.pdb
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\WebDriver.Support.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\WebDriver.Support.xml
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\GmailTestFramework.dll.config
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\bin\Debug\TechTalk.SpecFlow.dll
+d:\users\user\pictures\documents\visual studio 2015\Projects\GmailTestFramework\GmailTestFramework\obj\Debug\GmailTestFramework.csprojResolveAssemblyReference.cache

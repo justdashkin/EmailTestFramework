@@ -7,6 +7,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using GmailTestFramework.Elements;
+using OpenQA.Selenium.Support;
+using OpenQA.Selenium.Support.UI;
 
 namespace GmailTestFramework.TestFramework
 {
@@ -30,18 +32,28 @@ namespace GmailTestFramework.TestFramework
             WebDriver.Navigate().GoToUrl(url);
         }
 
+        public static void MaximazeWindow()
+        {
+            WebDriver.Manage().Window.Maximize();
+        }
+
         public static IWebElement FindWebElement(WebElement webElement)
         {
             if (webElement.Id != "")
                 return WebDriver.FindElementById(webElement.Id);
 
-            if (webElement.ClassName != "")
-                return WebDriver.FindElementByClassName(webElement.ClassName);
+            if (webElement.Name != "")
+                return WebDriver.FindElementByName(webElement.Name);
 
             if (webElement.XPathQuery != "")
                 return WebDriver.FindElementByXPath(webElement.XPathQuery);
 
             return null;
+        }
+
+        public static void WaitUntilElementPresent(WebElement element)
+        {
+            new WebDriverWait(WebDriver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.ElementIsVisible(By.XPath(element.XPathQuery)));
         }
 
         public static void TearDown()

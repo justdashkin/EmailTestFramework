@@ -12,13 +12,13 @@ namespace GmailTestFramework.Elements
     public class WebElement
     {
         public string Id;
-        public string ClassName;
+        public string Name;
         public string XPathQuery;
 
-        public WebElement(string Id, string ClassName, string XPathQuery)
+        public WebElement(string Id, string Name, string XPathQuery)
         {
             this.Id = Id;
-            this.ClassName = ClassName;
+            this.Name = Name;
             this.XPathQuery = XPathQuery;
         }
 
@@ -30,6 +30,10 @@ namespace GmailTestFramework.Elements
         public void SetValue(string Value)
         {
             TestFramework.TestFramework.FindWebElement(this).SendKeys(Value);
+        }
+
+        public void Enter()
+        {
             TestFramework.TestFramework.FindWebElement(this).SendKeys(Keys.Enter);
         }
     }
