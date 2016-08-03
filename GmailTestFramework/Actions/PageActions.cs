@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace GmailTestFramework.Actions
         public static void OpenLoginPage()
         {
             TestFramework.TestFramework.MaximazeWindow();
-            TestFramework.TestFramework.OpenURL("https://mail.google.com/mail");
+            TestFramework.TestFramework.OpenURL(ConfigurationManager.AppSettings["baseUrl"]);
         }
     }
 }
