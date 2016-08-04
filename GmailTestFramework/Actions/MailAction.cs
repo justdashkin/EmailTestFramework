@@ -1,8 +1,5 @@
-﻿using System;
-using System.Configuration;
-using System.Threading;
+﻿using System.Configuration;
 using GmailTestFramework.Pages;
-using FluentAssertions;
 
 namespace GmailTestFramework.Actions
 {

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GmailTestFramework.Actions;
-using NUnit.Framework;
+﻿using GmailTestFramework.Actions;
 using TechTalk.SpecFlow;
 using FluentAssertions;
-using GmailTestFramework.Pages;
 using RelevantCodes.ExtentReports;
 
 namespace GmailTestFramework.TestCases
@@ -18,7 +11,7 @@ namespace GmailTestFramework.TestCases
         private string mailSubject;
         private string mailBody;
         private static ExtentReports extent = ExtentManager.Instance();
-        private static ExtentTest test = extent.StartTest("verify", "sss");
+        private static ExtentTest test = extent.StartTest("Check successful login and aproppriate mail", "");
 
         [Given(@"I open login page")]
         public void GivenIOpenLoginPage()

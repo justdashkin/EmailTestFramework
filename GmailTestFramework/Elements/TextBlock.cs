@@ -1,6 +1,4 @@
-﻿using OpenQA.Selenium;
-
-namespace GmailTestFramework.Elements
+﻿namespace GmailTestFramework.Elements
 {
     public class TextBlock : WebElement
     {

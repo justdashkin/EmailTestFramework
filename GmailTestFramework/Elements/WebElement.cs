@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GmailTestFramework.TestFramework;
-namespace GmailTestFramework.Elements
+﻿namespace GmailTestFramework.Elements
 {
     public class WebElement
     {
