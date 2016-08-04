@@ -1,10 +1,4 @@
-﻿using System;
-using GmailTestFramework;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GmailTestFramework.Pages;
+﻿using GmailTestFramework.Pages;
 using System.Configuration;
 
 namespace GmailTestFramework.Actions

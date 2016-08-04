@@ -1,73 +1,99 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
-using GmailTestFramework.Elements;
+﻿using GmailTestFramework.Elements;
 
 namespace GmailTestFramework.Pages
 {
     public class MailPage
     {
-        public static WebElement CreateNewButton
+        public static ClickElement CreateNewButton
         {
             get
             {
-                return new WebElement("", "", "//*[@class='aic']/div/div");
+                return new ClickElement("", "", "//*[@class='aic']/div/div");
             }
         }
 
-        public static WebElement ToTextBox
+        public static TextBox ToTextBox
         {
             get
             {
-                return new WebElement("", "", "//textarea[@aria-label='Кому']");
+                return new TextBox("", "", "//textarea[@aria-label='Кому']");
             }
         }
 
-        public static WebElement SubjectTextBox
+        public static TextBox SubjectTextBox
         {
             get
             {
-                return new WebElement("", "subjectbox", "");
+                return new TextBox("", "subjectbox", "");
             }
         }
 
-        public static WebElement MailBodyTextBox
+        public static TextBox MailBodyTextBox
         {
             get
             {
-                return new WebElement("", "", "//*[@class='Am Al editable LW-avf']");
+                return new TextBox("", "", "//*[@class='Am Al editable LW-avf']");
             }
         }
 
-        public static WebElement SendButton
+        public static ClickElement SendButton
         {
             get
             {
-                return new WebElement("", "", "//div[contains(@data-tooltip, 'Отправить')]");
+                return new ClickElement("", "", "//div[contains(@data-tooltip, 'Отправить')]");
             }
         }
 
-        public static WebElement InboxLink
+        public static ClickElement InboxLink
         {
             get
             {
-                return new WebElement("", "", "//a[contains(@title, 'Входящие')]");
+                return new ClickElement("", "", "//a[contains(@title, 'Входящие')]");
             }
         }
 
-        public static WebElement LatestLeterChecBox
+        public static ClickElement LatestLeterCheckBox
         {
-            get { return new WebElement("", "", "//tr[1]//div[@role='checkbox']"); }
+            get { return new ClickElement("", "", "//tr[1]//div[@role='checkbox']"); }
         }
 
-        public static WebElement DeleteButton
+        public static ClickElement DeleteButton
         {
             get
             {
-                return new WebElement("", "", "//*[@class='ar9 T-I-J3 J-J5-Ji']");
+                return new ClickElement("", "", "//*[@class='ar9 T-I-J3 J-J5-Ji']");
+            }
+        }
+
+        public static TextBlock Profile
+        {
+            get
+            {
+                return new TextBlock("", "", "//a[contains(@title, 'Аккаунт')]");
+            }
+        }
+
+        public static TextBlock MailSender
+        {
+            get
+            {
+                return new TextBlock("", "", "//div[@class='UI']//table//td[4]/div[1]/span[@email]");
+            }
+        }
+
+        public static TextBlock MailSubject
+        {
+            get
+            {
+                return new TextBlock("", "", "//div[@class='UI']//table//tr[1]/td[6]/div[1]//span/b");
+            }
+        }
+
+        public static TextBlock Message
+        {
+            get
+            {
+                return new TextBlock("", "", "//div[@class='UI']//table//tr[1]/td[6]/div[1]//span[2]");
             }
         }
     }

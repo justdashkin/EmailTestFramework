@@ -75,18 +75,20 @@
     <Compile Include="Actions\LoginAction.cs" />
     <Compile Include="Actions\MailAction.cs" />
     <Compile Include="Actions\PageActions.cs" />
+    <Compile Include="Elements\ClickElement.cs" />
+    <Compile Include="Elements\TextBlock.cs" />
+    <Compile Include="Elements\TextBox.cs" />
     <Compile Include="Elements\WebElement.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\MailPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCases\CheckSuccessfulLoginSteps.cs" />
-    <Compile Include="TestCases\CheckSuccessfulLogin.feature.cs">
+    <Compile Include="TestCases\CheckingMail.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CheckSuccessfulLogin.feature</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CheckingMail.feature</DependentUpon>
     </Compile>
-    <Compile Include="TestCases\ExtentManager.cs" />
+    <Compile Include="TestCases\CheckSuccessfulLoginSteps.cs" />
+    <Compile Include="TestFramework\ExtentManager.cs" />
     <Compile Include="TestFramework\TestFramework.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,10 +96,9 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="TestCases\CheckSuccessfulLogin.feature">
+    <None Include="TestCases\CheckingMail.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CheckSuccessfulLogin.feature.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>CheckingMail.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

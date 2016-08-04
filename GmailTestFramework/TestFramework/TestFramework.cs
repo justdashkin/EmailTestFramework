@@ -60,6 +60,13 @@ namespace GmailTestFramework.TestFramework
         {
             WebDriver.Manage().Cookies.DeleteAllCookies();
             WebDriver.Close();
+            WebDriver.Quit();
+        }
+
+        public static void RefreshPage()
+        {
+            WebDriver.Navigate().Refresh();
+            WebDriver.SwitchTo().Alert().Accept();
         }
     }
 }

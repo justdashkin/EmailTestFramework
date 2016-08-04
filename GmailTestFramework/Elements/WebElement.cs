@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GmailTestFramework.TestFramework;
-using OpenQA.Selenium;
-
-
 namespace GmailTestFramework.Elements
 {
     public class WebElement
@@ -22,19 +19,9 @@ namespace GmailTestFramework.Elements
             this.XPathQuery = XPathQuery;
         }
 
-        public void Click()
+        public string Title
         {
-            TestFramework.TestFramework.FindWebElement(this).Click();
-        }
-
-        public void SetValue(string Value)
-        {
-            TestFramework.TestFramework.FindWebElement(this).SendKeys(Value);
-        }
-
-        public void Enter()
-        {
-            TestFramework.TestFramework.FindWebElement(this).SendKeys(Keys.Enter);
+            get { return TestFramework.TestFramework.FindWebElement(this).GetAttribute("title"); }
         }
     }
 }

@@ -7,29 +7,31 @@ using GmailTestFramework.Actions;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using FluentAssertions;
+using GmailTestFramework.Pages;
 using RelevantCodes.ExtentReports;
-
 
 namespace GmailTestFramework.TestCases
 {
-   //[Binding]
+    [Binding]
     public class CheckSuccessfulLoginSteps
     {
-        private ExtentReports extent;
-        private ExtentTest test;
+        private string mailSubject;
+        private string mailBody;
+        private static ExtentReports extent = ExtentManager.Instance();
+        private static ExtentTest test = extent.StartTest("verify", "sss");
 
-      /*  [Given(@"I open login page")]
+        [Given(@"I open login page")]
         public void GivenIOpenLoginPage()
         {
-            test = extent.StartTest("Login page", "Verify Logining");
             PageActions.OpenLoginPage();
-            test.Log(LogStatus.Pass, "good job, girl!");
+            test.Log(LogStatus.Pass, "Login is success!");
         }
 
         [When(@"I login")]
         public void WhenILogin()
         {
             LoginAction.Login();
+            test.Log(LogStatus.Pass, "Mail page is opened");
         }
 
         [When(@"I create new message")]
@@ -38,35 +40,76 @@ namespace GmailTestFramework.TestCases
             MailAction.CreateNewMessage();
         }
 
+        [When(@"I address message to ""(.*)""")]
+        public void SetTo(string to)
+        {
+            MailAction.SetTo(to);
+        }
+
+        [When(@"I print subject ""(.*)""")]
+        public void SetSubject(string subject)
+        {
+            mailSubject = subject;
+            MailAction.SetSubject(subject);
+        }
+
+        [When(@"I print message: ""(.*)""")]
+        public void SetMailBody(string usersMailBody)
+        {
+            mailBody = usersMailBody;
+            MailAction.SetMailBody(usersMailBody);
+        }
+
+        [When(@"I send mail")]
+        public void SendMail()
+        {
+            MailAction.SendMessage();
+            test.Log(LogStatus.Pass, "Email was sended");
+        }
+
+        [When(@"I find message")]
+        public void Lala()
+        {
+            MailAction.WaitMessage();
+            test.Log(LogStatus.Pass, "Email was founded");
+        }
+
+        [Then(@"My profile should be opened")]
+        public void CheckSuccessfulLogin()
+        {
+            MailAction.IsUserProfile.Should().BeTrue();
+            test.Log(LogStatus.Pass, "Login was succed and verified");
+        }
+
+        [Then(@"Sender is expected sender")]
+        public void CheckSender()
+        {
+            MailAction.IsExpectedSender.Should().BeTrue();
+            test.Log(LogStatus.Pass, "Sender is expected sender");
+        }
+
+        [Then(@"Subject is expected subject")]
+        public void CheckSubject()
+        {
+            MailAction.IsExpectedSubject(mailSubject).Should().BeTrue();
+            test.Log(LogStatus.Pass, "Subject is expected subject");
+        }
+
+        [Then(@"Message is expected message")]
+        public void CheckMessage()
+        {
+            MailAction.IsExpectedMessage(mailBody).Should().BeTrue();
+            test.Log(LogStatus.Pass, "Message is expected message. Test passed!");
+        }
+        
         [AfterScenario]
         public void TearDown()
         {
-            extent.EndTest(test);
-            extent.Flush();
-            extent.Close();
-            TestFramework.TestFramework.TearDown();
-        }*/
-        
-        [Test]
-        public void CheckSuccessfulLogining()
-        {
-            extent = ExtentManager.Instance();
-            test = extent.StartTest("verify", "sss");
-            extent.StartTest("Login page", "Verify Logining");
-            test.Log(LogStatus.Pass, "good job, girl!");
-            PageActions.OpenLoginPage();
-            LoginAction.Login();
-            MailAction.CreateNewMessage();
-        }
-        
-       [TearDown]
-        public void TearDown()
-        {
+            MailAction.DeleteMessage();
             extent.EndTest(test);
             extent.Flush();
             extent.Close();
             TestFramework.TestFramework.TearDown();
         }
-        
     }
 }

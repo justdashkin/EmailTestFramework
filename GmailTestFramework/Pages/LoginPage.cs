@@ -1,28 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
-using GmailTestFramework.Elements;
+﻿using GmailTestFramework.Elements;
 
 namespace GmailTestFramework.Pages
 {
     public class LoginPage
     {
-        public static WebElement EmailTextBox
+        public static TextBox EmailTextBox
         {
-            get { return new WebElement("Email", "", ""); }
+            get { return new TextBox("Email", "", ""); }
         }
 
-        public static WebElement PasswordTextBox
+        public static TextBox PasswordTextBox
         {
-            get { return new WebElement("Passwd", "", "");}
+            get { return new TextBox("Passwd", "", "");}
         }
 
-        public static WebElement SignInButton
+        public static ClickElement SignInButton
         {
-            get { return new WebElement("signIn", "", "");}
+            get { return new ClickElement("signIn", "", "");}
         }
     }
 }
